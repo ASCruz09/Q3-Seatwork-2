@@ -3,73 +3,139 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Q3Seatwork2</title>
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dancing+Script">
+	<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Dancing+Script&display=swap" rel="stylesheet">
 	<style>
+		body{
+			font-family:Helvetica;
+			background-image: url(https://cdn.mos.cms.futurecdn.net/G79YngbW86RJ2QtzFfZEu3-970-80.jpg);
+			background-repeat: no-repeat;
+			background-size: 100%;
+			background-position: center;
+			color: rgb(160, 235, 199)
+		}
+
+	h1{
+		color:rgb(160, 235, 199)
+		padding: 5 px;
+		width:70%;
+		background-color:rgb(160, 235, 199);
+		margin: 20px;
+	}
 		img{
 			height: 250px;
-			width: 300px;
-			left: 180px;
+			width: 250px;
 		}
-		body{
-			background-image: url(https://cdn.shopify.com/s/files/1/0575/0987/1774/files/4_7315db01-be96-4931-889c-8142cb97b580.png?v=1653967370);
-			background-attachment: fixed;
-			background-repeat: no-repeat;
-			background-size: 2000px 2000px;
-		}
-		body{
-			font-family: Helvetica;
+		#main{
+			padding: 5 px;
+			width:70%;
+			background-color:#a2d6db;
+			margin: 20px;
+		#text{
+			color: black;
 		}
 	</style>
-	<title>Q3 Quiz 1</title>
 </head>
 <body>
-<center>
-	<img src="https://i.pinimg.com/originals/c4/df/d4/c4dfd41e63196d3144c08fb63487b85d.png">
-	<h1> Movie Review </h1>
-	<br><br>
-	<div class="container-fluid">
-	   <div class="row">
-		  <div class="col-md-3">
-		  <img class="img-thumbnail" src="https://i.pinimg.com/originals/bf/89/4e/bf894e2a8bff42d359ffd3bf14432e11.jpg"><br><br><br><br><br><br>
-		  <img class="img-thumbnail" src="https://i.pinimg.com/originals/a5/99/e8/a599e8a6c6cea1501504dea5fb4a9011.jpg"><br><br><br><br><br><br>
-		  <img class="img-thumbnail" src="https://i.pinimg.com/originals/2a/c6/be/2ac6be6e0602a23946f5768099d2e660.jpg"><br><br><br><br><br><br>
+	<center>
+	<h1>ANIMAL CROSSING:NEW HORIZONS</h1>
+
+	<div id= "main" class="container">
+	<div class="row">
+
+		<table>
+			<tr>
+				<td>
+					<div class="col-md-4">
+					<img class="img-fluid-rounded" src="https://i.pinimg.com/564x/4e/7c/da/4e7cda72d0daa9b605cc735b61eb198d.jpg"/>
+				</td>
+				<td>
+					<div class="col-md-8">
+					<p><span id="text">Tom Nook</span>Tom Nook is a raccoon who runs various businesses throughout the Animal Crossing series. He operates Nook's Homes, where the player can customize their house, and in Animal Crossing: New Horizons, he works at Resident Services and gives daily announcements prior to the building's upgrade. </p>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div class="col-md-4">
+					<img class="img-fluid-rounded" src="https://i.pinimg.com/564x/94/7f/a3/947fa3e2452c6982718309588fb03f54.jpg"/>
+				</td>
+				<td>
+					<div class="col-md-8">
+					<p>Isabelle is a dog in the Animal Crossing series who first appeared in Animal Crossing: New Leaf, where she helps the player with their duties as mayor. <span id="text">Isabella</span>.</p>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div class="col-md-4">
+					<img class="img-fluid-rounded" src="https://i.pinimg.com/564x/23/19/f0/2319f0511503b09f397d911f1223f9c3.jpg"/>
+				</td>
+				<td>
+					<div class="col-md-8">
+					<p>Mable<span id="text">Mable is a hedgehog in the Animal Crossing series who co-owns the Able Sisters tailor shop with her older sister, Sable. She is the charismatic one out of the sisters, and she assists customers with their purchases.
+				</td>
+			</tr>
+		</table>
+	</div>
+
+
+	<form class="form-control">
+		<div class="row">
+			<div class="col">
+				<input type="text" class="form-control" id="email" placeholder="Enter email" name="email">
+			</div>
+			<div class="col">
+				<input type="password" class="form-control" placeholder="Enter password" name="pswd">
+			</div>
+
 		</div>
-		<div class="col-md-6">
-			<table id="table" class="table table-bordered">
+		<div class="row">
+			<div class="col">
+			What do you think about the movie?
+			<textarea class="form-control" rows="5" id="comment"></textarea>
+			</div>
 			
-				<tr class="bg-light">
-					<th> About </th>
-					<th> Cast </th>
-					<th> Movie Review </th>
-					<th> Rating</th>
-				</tr>
-				<tr class="bg-light" id="text">
-					<td>DIRECTED BY: Garry Marshall<br><br>DURATION: 1h 51m<br><br>Mia Thermopolis recently discovered that she appears to be Genovia's heir presumptive. Her pals Lilly and Michael Moscovitz accompany her as she attempts to make sense of the remaining months of her sixteenth year.</td>
-					<td>Anne Hathaway<br>(Mia Thermopolis)<br><br>Julie Andrews<br> (Queen Clarisse)<br><br>Heather Matarazzo<br> (Lily Moscovitz)<br><br> Robert Schwartzman<br>(Michael Moscovitz)</td>
-					<td>Marrit Ingman<br>"It's a cozy message for young girls, even if it's couched in a predictable plot that is pure Disney."<br><br>Danielle Solzman<br>"To say that both Anne Hathaway and Julie Andrews are absolute perfection in The Princess Diaries would not be an understatement."</td>
-					<td>6.1/10</td>
-				</tr>
-				<tr class="bg-light" id="text">
-					<td>DIRECTED BY: Mark Waters<br><br>DURATION: 1h 37m<br><br>For her first day of public high school, Cady is unprepared. Janis and Damien assist Cady in learning about the different cliques. She is advised to stay away from the Plastics, the dominant group of three girls headed by Regina George, the queen bee, who are the most exclusive clique at school.</td>
-					<td>Lindsay Lohan<br>(Cady Heron)<br><br>Rachel McAdams<br> (Regina George)<br><br>Amanda Seyfried<br> (Karen Smith)<br><br> Lacy Chabert<br>(Gretchen Wieners)</td>
-					<td>Steve Persall<br>"Mean Girls contains more than its share of recognition laughs for students, teachers and parents -- all of whom take turns as targets of the humor."<br><br>Bruce R. Miller<br>"The writing is witty; the satire is timeless. Mean Girls could be done in period costumes and still strike a very familiar chord."</td>
-					<td>7.1/10</td>
-				</tr>
-				<tr class="bg-light" id="text">
-					<td>DIRECTED BY: Nick Moore<br><br>DURATION: 1h 38m<br><br>Poppy Moore was a rebellious, borderline insane teen from Malibu. Her father sends Poppy to Abbey Mount, an extremely strict girls' boarding school in England, following one very wild celebration.</td>
-					<td>Emma Roberts <br>(Poppy Moore)<br><br>Kimberly Nixon<br>(Kate)<br><br>Georgia King<br> (Harriet Bentley)<br><br> Shelby Young<br>(Ruby)</td>
-					<td>Jake Wilson<br>"The screenplay by Lucy Dahl (daughter of Roald) dwells unpleasantly on cruelty and humiliation, and finally Poppy does little more than exchange one form of snobbery for another."<br><br>David Nusair<br>"
-Mildly entertaining and utterly innocuous..."</td>
-					<td>6.1/10</td>
-				</tr>
-			</table>
+			<div class="col">
+				<div class="form-check">
+					Who's your favorite character?<br>
+					<label class="form-check-label">
+					<input type="checkbox" class="form-check-input" value="">Tom Nook
+					<br>
+					<input type="checkbox" class="form-check-input" value="">Isabella
+					<br>
+					<input type="checkbox" class="form-check-input" value="">Mable
+
+				</label>
+
 		</div>
 	</div>
+	<br><br>
+	<div class="row">
+	<div class="col-md-6">
+	<div class="form-group">
+  <label for="list1"> Please rate this game:</label>
+		  <select class="form-control" id="list1">
+		    <option>1/5</option>
+		    <option>2/5</option>
+		    <option>3/5</option>
+		    <option>4/5</option>
+		    <option>5/5</option>
+		  </select>
+		</div>
+		</div>
+	<div class="col-md-6">
+	<div class="form-group">
+		<button type="button" class="btn btn-outline-success">Submit</button>
+	</div>
+	<div class="col-md-6">
+	<div class="form-group">
+		<div class="alert alert-success">
+		<strong>Successfully submitted!</strong>
+	</div>
 </div>
-</td>
-<h3>References:</h3>
-<a href="https://www.netflix.com/ph-en/browse/genre/34399" target="_blank">More movies to watch</a>
+</div>
+
+	</form>
 
 </center>
 </body>
